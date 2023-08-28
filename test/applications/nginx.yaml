@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: applications
+  annotations:
+    test: nginx
 spec:
   selector:
     matchLabels:
